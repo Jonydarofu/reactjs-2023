@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./componentes/Footer/Footer";
+import CartWidget from "./componentes/CartWidget/CartWidget";
+import Navbar from "./componentes/Navbar/Navbar";
+import ProductCard from "./componentes/ProductCard/ProductCard";
+import ItemListConteiner from "./componentes/ItemListConteiner/ItemListConteiner";
+import ItemCount from "./componentes/ItemCount/ItemCount";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ConsumiendoApis from "./componentes/ConsumiendoApis/ConsumiendoApis";
+import { BsTypeH1 } from "react-icons/bs";
 
 function App() {
+  const onAdd = (cantidad) => {
+    console.log(`se agrego al carrito ${cantidad}elementos`);
+  };
+  let stock = 10;
+
+  let initial = 1;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<ItemListConteiner />} />
+
+          <Route path="/cart" element={<cart />} />
+
+          <Route path="/login" element={<login />} />
+
+          <Route path="*" element={<h1> error 404: Not Found</h1>} />
+        </Routes>
+
+        <ItemCount stock={stock} initial={initial} onAdd={onAdd} />
+      </BrowserRouter>
     </div>
   );
 }
