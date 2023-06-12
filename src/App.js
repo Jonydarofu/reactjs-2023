@@ -1,12 +1,12 @@
 import Footer from "./componentes/Footer/Footer";
 import CartWidget from "./componentes/CartWidget/CartWidget";
 import Navbar from "./componentes/Navbar/Navbar";
-import ProductCard from "./componentes/ProductCard/ProductCard";
-import ItemListConteiner from "./componentes/ItemListConteiner/ItemListConteiner";
-import ItemCount from "./componentes/ItemCount/ItemCount";
+//*import ProductCard from "./componentes/ProductCard/ProductCard";*//
+import ItemListConteiner from "./componentes/ItemListContainer/ItemListContainer";
+//*import ItemCount from "./componentes/ItemCount/ItemCount";*//
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ConsumiendoApis from "./componentes/ConsumiendoApis/ConsumiendoApis";
+//*import ConsumiendoApis from "./componentes/ConsumiendoApis/ConsumiendoApis";*//
 import { BsTypeH1 } from "react-icons/bs";
 
 function App() {
