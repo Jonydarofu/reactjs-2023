@@ -3,7 +3,7 @@ import CartWidget from "./componentes/CartWidget/CartWidget";
 import Navbar from "./componentes/Navbar/navbar";
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import { BsTypeH1} from "react-icons/bs";
+import { BsTypeH1 } from "react-icons/bs";
  
 function App(){
   const onAdd = (cantidad) => {
