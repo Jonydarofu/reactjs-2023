@@ -20,5 +20,4 @@ const CartWidget = ({ numero }) => {
     </Link>
   );
 };
-
 export default CartWidget;

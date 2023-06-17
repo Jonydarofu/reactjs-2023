@@ -1,3 +1,7 @@
+import React from "react";
+
+import styles from "./Item.module.css";
+
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -33,3 +37,4 @@ const Item = ({ element }) => {
     </Card>
   );
 };
+export default Item;
