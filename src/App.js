@@ -1,6 +1,9 @@
 import Footer from "./componentes/Footer/Footer";
 import CartWidget from "./componentes/CartWidget/CartWidget";
 import Navbar from "./componentes/Navbar/Navbar";
+import ProductCard from "./componentes/ProductCard/ProductCard";
+import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
+import ItemCount from "./componentes/ItemCount/ItemCount";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BsTypeH1 } from "react-icons/bs";
